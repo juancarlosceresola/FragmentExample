@@ -7,11 +7,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-
+//mio
 
 class BlueFragment : Fragment() {
     // TODO: Rename and change types of parameters
-    private var btnPlus:Button?=null
+
     private var listener: OnFragmentActionsListener? = null
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -19,12 +19,12 @@ class BlueFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_blue, container, false)
-        btnPlus= view?.findViewById(R.id.btnPlus)
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        val btnPlus:Button=view.findViewById(R.id.btnPlus)
         btnPlus?.setOnClickListener { listener?.onClickFragmentButton() }
     }
     override fun onAttach(context: Context) {
